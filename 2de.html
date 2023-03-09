@@ -25,7 +25,7 @@
 
 <script>
   // Load the dataset
-  d3.csv("combined.csv", function(error, data) {
+  d3.csv("data/combined.csv", function(error, data) {
     if (error) {
         console.log(error);
     } else {
@@ -49,7 +49,7 @@
       var symbol = d3.symbol()
         .type(function(d) {
         // Get the image corresponding to the current data point
-        var imageUrl = "colored_images/image" + d.i + ".png";
+        var imageUrl = "data/colored_images/image" + d.i + ".png";
         // Create an SVG pattern for the image
         var patternId = "image-pattern";
         var pattern = svg.append("pattern")
@@ -86,7 +86,7 @@
         .attr("y", d => y(d.pca2))
         .attr("width", symbolsize)
         .attr("height", symbolsize)
-        .attr("xlink:href", function(d,i) { return "colored_images/image" + i + ".png"; })
+        .attr("xlink:href", function(d,i) { return "data/colored_images/image" + i + ".png"; })
         .attr("transform", function(d){return "translate(" + (-symbolsize/2) + "," + (-symbolsize/2) + ")"})
         .attr("class", function(d, i){return "image" + i ;})  // Add a class to each image
         .on("mouseover", function(d, i) {
@@ -218,7 +218,7 @@
         .attr("y", d => y(d.tsne2))  // Set the y position of the image
         .attr("width", symbolsize)  // Set the width of the image
         .attr("height", symbolsize)  // Set the height of the image
-        .attr("xlink:href", function(d,i) { return "colored_images/image" + i + ".png"; })  // Set the image source
+        .attr("xlink:href", function(d,i) { return "data/colored_images/image" + i + ".png"; })  // Set the image source
         .attr("transform", function(d){return "translate(" + (-symbolsize/2) + "," + (-symbolsize/2) + ")"})  // Center the image
         .attr("class", function(d, i){return "image" + i ;})  // Set the class of the image
         .on("mouseover", function(d, i) {
