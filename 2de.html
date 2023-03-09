@@ -152,7 +152,7 @@
         .attr("y", d => y(d.mds2))  // Set the y position of the image
         .attr("width", symbolsize)  // Set the width of the image
         .attr("height", symbolsize)  // Set the height of the image
-        .attr("xlink:href", function(d,i) { return "colored_images/image" + i + ".png"; })  // Set the image source
+        .attr("xlink:href", function(d,i) { return "data/colored_images/image" + i + ".png"; })  // Set the image source
         .attr("transform", function(d){return "translate(" + (-symbolsize/2) + "," + (-symbolsize/2) + ")"})  // Center the image
         .attr("class", function(d, i){return "image" + i ;})
         .on("mouseover", function(d, i) {
