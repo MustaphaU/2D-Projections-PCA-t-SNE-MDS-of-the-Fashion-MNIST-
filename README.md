@@ -1,3 +1,3 @@
 # 2D-Projections-PCA-t-SNE-MDS-of-the-Fashion-MNIST-
-* 2D Projections of the Fashion Mnist Data. Each scatterplot shows the actual fashion item from the test dataset. Your browser will take some time to load the 30,000 images on the screen.
+* 2D Projections of the Fashion Mnist Data. Each scatterplot shows the actual fashion item from the test dataset. Your browser will take some time to load the 30,000 images on the screen. View deployment here: https://mustaphau.github.io/2D-Projections-PCA-t-SNE-MDS-of-the-Fashion-MNIST-/
 ![all_three](https://user-images.githubusercontent.com/123378149/233761429-ac3401f8-2799-4be7-a28d-150ec43ec3ad.png)
